@@ -1,1 +1,4 @@
-This is a React Starter Project for use in Stephen Grider's courses on Udemy.
+- Learned how state works in react how react updates the dom when state changes.
+- Events and Event Handlers in react.
+- How map works in react how react renders a list of components
+- modular wway of adding styles to react app
