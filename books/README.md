@@ -1,4 +1,4 @@
-- Following are the concepts i learned while making this app.
+# Following are the concepts i learned while making this app.
 
 - State design.
 - How to change states like adding removing updating state when the state follows an array or object data structure.
