@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function BookEdit({book,editBook,onSubmit}) {
+function BookEdit({book,onSubmit}) {
   const [title ,setTitle] = useState(book.title)
 
   const handleChange =(e) => {
