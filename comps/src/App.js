@@ -1,45 +1,26 @@
-import React from 'react'
-import Button from './Button'
-import "./index.css"
-import { GoBell,GoCloudOffline,GoDatabase } from 'react-icons/go'
-function App() {
-  const handleClick = ()=>{
-    console.log("click")
-  }
-  return (
-    <div>
-      <div>
-        <Button primary rounded outline onClick={handleClick}>
-           <GoBell />
-            Click me!
-        </Button>
-      </div>
-      <div>
-        <Button secondary onMouseEnter = {handleClick}>
-        <GoCloudOffline/>
-          Buy Now!
-        </Button>
-      </div>
-      <div>
-        <Button success rounded onMouseLeave = {handleClick}>
-        <GoDatabase/>
-          See Deal!
-        </Button>
-      </div>
-      <div>
-        <Button warning >
-          Sell Now!
-        </Button>
-      </div>
+import Accordion from "./components/Accordion"
 
-      <div>
-        <Button danger>
-          Sell Now!
-        </Button>
-      </div>
-      
-    </div>
-  )
+function App() {
+  const items = [
+    {
+      id: '12hjbhjk',
+      label:'Can i use react ona Project',
+      content: 'You can use React on Any project.You can use React on Any project.You can use React on Any project'
+    },
+    {
+      id:'jkbjkb12',
+       label:'Can i use javascript ona Project',
+      content: 'You can use React on Any project.You can use React on Any project.You can use React on Any project'
+    },
+    {
+      id:'lkjad245',
+       label:'Can i use PHP ona Project',
+      content: 'You can use React on Any project.You can use React on Any project.You can use React on Any project'
+    }
+  ]
+ return (
+  <Accordion items={items} />
+ )
 }
 
 export default App
