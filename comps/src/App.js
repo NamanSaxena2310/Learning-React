@@ -25,8 +25,12 @@ const handleSelect = (option) => {
     }
   ]
   return (
-    <div>
-      <Dropdown options= {options} onSelect = {handleSelect} selection={selection} />
+    <div className='flex'>
+      <Dropdown  options= {options} onSelect = {handleSelect} selection={selection} />
+      <Dropdown  options= {options} onSelect = {handleSelect} selection={selection} />
+      <Dropdown  options= {options} onSelect = {handleSelect} selection={selection} />
+
+     
     </div>
   )
 }
